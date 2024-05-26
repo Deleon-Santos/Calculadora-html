@@ -1,4 +1,6 @@
 
+@charset "UTF8";
+
 *{
 margin: 0;
 padding: 0;
@@ -9,6 +11,7 @@ padding: 0;
     --Corpo:rgba(0, 0, 0, 0.852);
     --Texto:rgba(0, 0, 0, 0.837);
     --Botao_c_igual:rgba(255, 0, 0, 0.622);
+    --texto_numeros:rgba(212, 210, 210, 0.953);
 
 }
 body{
@@ -21,32 +24,68 @@ body{
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-style: normal;
     font-weight: bolder;
     background: var(--Topo_Rodape);
+    color: var(--texto_numeros);
     
-    margin-bottom: 0px;
-    height:120px ;
+    height:80px ;
 
 
     
 }
 .corpo{
+    min-width: 640px;
     background: var(--cor2);
     display: flex;
     align-items: center;
     justify-content: center;
+    background-image: linear-gradient(to bottom,var(--Fundo),var(--Corpo));
+}
+.descricao{
+    margin: 10px;
+    padding: 10px;
+    width: 300px;
+    align-items: center;
+    justify-content: center;
+    
+    padding-bottom: 20px;
+    
+    
+    font-family:  Courier ;
+}
+.descricao  h1{
+    color: var(--Topo_Rodape);
+    font-family:  Courier ;
+    font-size: 2rem;
+    font-weight: bolder;
+}
+
+.descricao strong{
+    color: var(--Topo_Rodape);
+    font-size: 1rem;
+}
+
+.desc{
+    text-align: center;
+    
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin:30px
 }
 .layout{
+    margin: 10px;
+    padding: 10px;
     width: 300px;
     background: var(--Corpo);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px 10px 10px rgb(7, 7, 7) ;
+    border-radius: 40px ;
     padding-bottom: 20px;
-    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.764);
+    box-shadow: 3px 3px 3px var(--Fundo);
+    border-color:2px antiquewhite;
 }
 
 .label{
@@ -63,7 +102,7 @@ input{
     font-size: 2rem;
     font-family:'sans-serif' cursive;
     border-radius: 30px;
-    
+    margin:2px;
 }
 
 .num{
@@ -71,10 +110,7 @@ input{
     height: 60px;
     background: rgba(0, 0, 0, 0.492);
     cursor: pointer;
-    border:  rgba(9, 1, 1, 0.038);
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
+    border: 5px rgb(244, 235, 235);
     box-shadow: 2px 2px 2px rgba(245, 245, 245, 0.188);
 
 }
@@ -86,10 +122,11 @@ input{
 
 .limpar{
     background: var(--Botao_c_igual);
-    border: aqua;
+    border: 5px rgb(244, 235, 235);
     width: 60px;
     height: 60px;
     cursor: pointer;
+    box-shadow: 2px 2px 2px rgba(245, 245, 245, 0.188);
     
 }
 .limpar:hover{
@@ -98,55 +135,62 @@ input{
 }
 
 .operador{
+    
     background: rgba(0, 255, 255, 0.53);
     border-radius: 30px;
-    width: 60px;
-    height: 60px;
+    
+   
 }
 
 .equalizer{
     background: var(--Botao_c_igual);
     border-radius: 30px;
-    width: 60px;
-    height: 60px;
+   
 }
 .text{
-    width: 209px;
+    width: 225px;
+    height: 40px;
     font-family: Arial, Helvetica, sans-serif cursive;
-    border-radius: 30px;;
+    text-align: right;
     color: var(--Texto);
-    font-size: 4rem;
+    font-size: 3rem;
     letter-spacing: 2px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-bottom: 10px;
-    box-shadow: -3px;
+    box-shadow: 1px 1px 1px 1px 1px rgba(255, 255, 255, 0.196);
 }
 
 footer{
-    margin-top: 0px;
+    display: flex;
+    
     font-style: normal;
     font-weight: bolder;
     background:  var(--Topo_Rodape);
-    height: 100px;
-    text-decoration: none;
+    height: 65px;
     color: rgba(26, 36, 35, 0.889);
+    align-items: center;
+    justify-content: center;
 }
  
- 
  .social{
-    
     display: flex;
     align-items: center;
     justify-content: center;
     font-family: sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     font-style: italic;
-    padding: 20px;
+    padding: 10px;
     gap: 15px;
     cursor: pointer;
+    
  }
- .social :hover{
-    text-shadow: 2px 2px 3px rgba(1, 55, 55, 0.693);
+ .social a{
+    color: var(--texto_numeros);
+    text-decoration: none;
+ }
+ .social a:hover{
+    text-shadow: 2px 2px 3px rgba(0, 15, 15, 0.693);
+    
  }
  
 .autor{
@@ -155,8 +199,25 @@ footer{
     justify-content: center;
     font-family: sans-serif;
     font-size: .8rem;
-  
+}
+@media only screen and (max-width:685px) {
+  body{
+    width: 100%;
     
-   
-   
+    
+  } 
+  .corpo {
+    min-width: 450px;
+    margin: auto;
+    flex-direction: column-reverse;
+    
+    width: 100% ;
+    align-items: center;}
+
+    .descricao strong{
+        color:var(--Fundo);
+    }
+    
+    
+  
 }
