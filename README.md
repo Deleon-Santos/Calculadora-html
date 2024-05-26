@@ -1,3 +1,3 @@
 # Calculadora-html
 
-https://github.com/Deleon-Santos/Calculadora-html.index
+https://deleon-santos.github.io/Calculadora-html/
