@@ -1,4 +1,4 @@
-# Calculadora-html
+
 
 https://deleon-santos.github.io/Calculadora-html/
 
@@ -42,4 +42,4 @@ Este é um projeto de uma calculadora online simples, desenvolvido em HTML, CSS 
 
 ## Autor
 
-- ** Deleon Santos.
+- Deleon Santos.
