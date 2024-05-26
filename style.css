@@ -1,7 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Micro+5+Charted&family=Protest+Revolution&display=swap');
+
 *{
 margin: 0;
 padding: 0;
+}
+:root{
+    --Topo_Rodape:rgba(3, 80, 80, 0.967);
+    --Fundo:rgba(172, 207, 240, 0.527);
+    --Corpo:rgba(0, 0, 0, 0.852);
+    --Texto:rgba(0, 0, 0, 0.837);
+    --Botao_c_igual:rgba(255, 0, 0, 0.622);
+
 }
 body{
     width: 100%;
@@ -16,44 +24,46 @@ body{
     font-size: 2rem;
     font-style: normal;
     font-weight: bolder;
-    background:  rgba(0, 2, 63, 0.895);
-    border-color: black;
-    margin-bottom: 20px;
+    background: var(--Topo_Rodape);
+    
+    margin-bottom: 0px;
     height:120px ;
 
 
     
 }
 .corpo{
-    background: antiquewhite;
+    background: var(--cor2);
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.mae{
+.layout{
     width: 300px;
-    background: black;
+    background: var(--Corpo);
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 10px;
+    border-radius: 10px 10px 10px rgb(7, 7, 7) ;
     padding-bottom: 20px;
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.764);
 }
 
-.titulo{
+.label{
     font-family: sans-serif, cursive;
     font-size: .6rem;
-    color: white;
+    color: rgba(255, 255, 255, 0.7);
     padding-top: 10px;
     padding-bottom: 10px;
 }
 input{
-    color: white;
+    color: rgba(200, 196, 196, 0.842);
     outline: none;
     padding: 17px;
-    font-size: 1rem;
+    font-size: 2rem;
     font-family:'sans-serif' cursive;
     border-radius: 30px;
+    
 }
 
 .num{
@@ -61,55 +71,70 @@ input{
     height: 60px;
     background: rgba(0, 0, 0, 0.492);
     cursor: pointer;
+    border:  rgba(9, 1, 1, 0.038);
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    box-shadow: 2px 2px 2px rgba(245, 245, 245, 0.188);
 
+}
+.num:hover{
+    background-color: whitesmoke;
+    font-weight: bolder;
+    color: var(--Texto);
 }
 
 .limpar{
-    background: red;
-    border-radius: 30px;
+    background: var(--Botao_c_igual);
+    border: aqua;
     width: 60px;
     height: 60px;
     cursor: pointer;
-    padding-bottom: ;
+    
+}
+.limpar:hover{
+    background-color:whitesmoke;
+    color: var(--Texto);
 }
 
 .operador{
-    background: rgba(0, 8, 255, 0.119);
+    background: rgba(0, 255, 255, 0.53);
     border-radius: 30px;
     width: 60px;
     height: 60px;
 }
 
 .equalizer{
-    background: rgba(255, 0, 0, 0.447);
+    background: var(--Botao_c_igual);
     border-radius: 30px;
     width: 60px;
     height: 60px;
 }
 .text{
     width: 209px;
-    font-family: 'Micro 5 Charted', cursive;
+    font-family: Arial, Helvetica, sans-serif cursive;
     border-radius: 30px;;
-    color: black;
+    color: var(--Texto);
     font-size: 4rem;
     letter-spacing: 2px;
     border-radius: 10px;
     margin-bottom: 10px;
+    box-shadow: -3px;
 }
 
 footer{
-    margin-top: 20px;
+    margin-top: 0px;
     font-style: normal;
     font-weight: bolder;
-    background:  rgba(0, 2, 63, 0.895);
+    background:  var(--Topo_Rodape);
     height: 100px;
     text-decoration: none;
-    color: black;
+    color: rgba(26, 36, 35, 0.889);
 }
  
  
  .social{
-    margin-top: 20px;
+    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -118,7 +143,10 @@ footer{
     font-style: italic;
     padding: 20px;
     gap: 15px;
-    
+    cursor: pointer;
+ }
+ .social :hover{
+    text-shadow: 2px 2px 3px rgba(1, 55, 55, 0.693);
  }
  
 .autor{
