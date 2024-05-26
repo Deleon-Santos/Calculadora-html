@@ -207,7 +207,7 @@ footer{
     
   } 
   .corpo {
-    min-width: 450px;
+    min-width: 350px;
     margin: auto;
     flex-direction: column-reverse;
     
