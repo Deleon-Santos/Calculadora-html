@@ -201,23 +201,28 @@ footer{
     font-size: .8rem;
 }
 @media only screen and (max-width:685px) {
-  body{
+    body{
     width: 100%;
     
     
   } 
-  .corpo {
-    min-width: 350px;
-    margin: auto;
-    flex-direction: column-reverse;
+    .corpo {
+        min-width: 350px;
+        margin: auto;
+        flex-direction: column-reverse;
     
-    width: 100% ;
-    align-items: center;}
+        width: 100% ;
+        align-items: center;}
 
+    .topo{
+        width: 100%;
+    }
     .descricao strong{
         color:var(--Fundo);
     }
-    
+    footer{
+        width:100%;
+    }
     
   
 }
