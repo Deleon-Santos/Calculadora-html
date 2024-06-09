@@ -12,12 +12,10 @@ padding: 0;
     --Texto:rgba(0, 0, 0, 0.837);
     --Botao_c_igual:rgba(255, 0, 0, 0.622);
     --texto_numeros:rgba(212, 210, 210, 0.953);
-
 }
 body{
     width: 100%;
-    height: 100vh;
-    
+    height: 100%;   
 }
 .topo{
     display: flex;
@@ -28,12 +26,9 @@ body{
     font-style: normal;
     font-weight: bolder;
     background: var(--Topo_Rodape);
-    color: var(--texto_numeros);
-    
-    height:80px ;
-
-
-    
+    color: var(--texto_numeros);   
+    height:120px ;
+    text-shadow: 2px 1px 2px black;  
 }
 .corpo{
     min-width: 640px;
@@ -48,11 +43,8 @@ body{
     padding: 10px;
     width: 300px;
     align-items: center;
-    justify-content: center;
-    
-    padding-bottom: 20px;
-    
-    
+    justify-content: center;    
+    padding-bottom: 20px;   
     font-family:  Courier ;
 }
 .descricao  h1{
@@ -60,16 +52,14 @@ body{
     font-family:  Courier ;
     font-size: 2rem;
     font-weight: bolder;
+    text-shadow:2px 2px black;
 }
-
 .descricao strong{
     color: var(--Topo_Rodape);
     font-size: 1rem;
 }
-
 .desc{
-    text-align: center;
-    
+    text-align: center;   
     font-size: 1rem;
     letter-spacing: 1px;
     margin:30px
@@ -82,12 +72,11 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 40px ;
+    border-radius: 25px ;
     padding-bottom: 20px;
-    box-shadow: 3px 3px 3px var(--Fundo);
+    box-shadow: 3px 3px 5px var(--Fundo), 3px 3px 3px var(--Fundo);
     border-color:2px antiquewhite;
 }
-
 .label{
     font-family: sans-serif, cursive;
     font-size: .6rem;
@@ -96,30 +85,32 @@ body{
     padding-bottom: 10px;
 }
 input{
+    
+    text-align: center;
+    justify-content: center;
     color: rgba(200, 196, 196, 0.842);
-    outline: none;
+    
     padding: 17px;
     font-size: 2rem;
     font-family:'sans-serif' cursive;
     border-radius: 30px;
     margin:2px;
+    
 }
-
 .num{
+    
     width: 60px;
     height: 60px;
     background: rgba(0, 0, 0, 0.492);
     cursor: pointer;
     border: 5px rgb(244, 235, 235);
     box-shadow: 2px 2px 2px rgba(245, 245, 245, 0.188);
-
 }
 .num:hover{
     background-color: whitesmoke;
     font-weight: bolder;
     color: var(--Texto);
 }
-
 .limpar{
     background: var(--Botao_c_igual);
     border: 5px rgb(244, 235, 235);
@@ -127,25 +118,18 @@ input{
     height: 60px;
     cursor: pointer;
     box-shadow: 2px 2px 2px rgba(245, 245, 245, 0.188);
-    
 }
 .limpar:hover{
     background-color:whitesmoke;
     color: var(--Texto);
 }
-
-.operador{
-    
+.operador{   
     background: rgba(0, 255, 255, 0.53);
-    border-radius: 30px;
-    
-   
+    border-radius: 30px;  
 }
-
 .equalizer{
     background: var(--Botao_c_igual);
-    border-radius: 30px;
-   
+    border-radius: 30px; 
 }
 .text{
     width: 225px;
@@ -159,10 +143,8 @@ input{
     margin-bottom: 10px;
     box-shadow: 1px 1px 1px 1px 1px rgba(255, 255, 255, 0.196);
 }
-
 footer{
     display: flex;
-    
     font-style: normal;
     font-weight: bolder;
     background:  var(--Topo_Rodape);
@@ -171,7 +153,6 @@ footer{
     align-items: center;
     justify-content: center;
 }
- 
  .social{
     display: flex;
     align-items: center;
@@ -181,18 +162,15 @@ footer{
     font-style: italic;
     padding: 10px;
     gap: 15px;
-    cursor: pointer;
-    
+    cursor: pointer; 
  }
  .social a{
     color: var(--texto_numeros);
     text-decoration: none;
  }
  .social a:hover{
-    text-shadow: 2px 2px 3px rgba(0, 15, 15, 0.693);
-    
+    text-shadow: 2px 2px 3px rgba(0, 15, 15, 0.693);  
  }
- 
 .autor{
     display: flex;
     align-items: center;
@@ -202,18 +180,14 @@ footer{
 }
 @media only screen and (max-width:685px) {
     body{
-    width: 100%;
-    
-    
-  } 
+    width: 100%;   
+    } 
     .corpo {
         min-width: 350px;
         margin: auto;
         flex-direction: column-reverse;
-    
         width: 100% ;
         align-items: center;}
-
     .topo{
         width: 100%;
     }
@@ -223,6 +197,4 @@ footer{
     footer{
         width:100%;
     }
-    
-  
 }
