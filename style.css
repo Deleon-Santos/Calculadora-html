@@ -148,10 +148,11 @@ footer{
     font-style: normal;
     font-weight: bolder;
     background:  var(--Topo_Rodape);
-    height: 65px;
+    height: 85px;
     color: rgba(26, 36, 35, 0.889);
     align-items: center;
     justify-content: center;
+    
 }
  .social{
     display: flex;
