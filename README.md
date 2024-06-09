@@ -1,6 +1,6 @@
 
 
-https://deleon-santos.github.io/Calculadora-html/
+https://deleon-santos.github.io/Claculator-html/
 
 # Calculadora Online
 
