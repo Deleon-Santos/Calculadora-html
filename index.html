@@ -36,24 +36,27 @@
         <div class="layout">
             <form action="" name="calculadora">
                 <h1 class="label">Calculator</h1>
-                <input type="text" class="text" name="display" disable><br>
-                <input type="button" class="limpar" name="clear" value="C" onclick="location.reload()"><br>
-                <input type="button" class="num" name="btn7" value="7" onclick="displaynum(btn7.value)">
-                <input type="button" class="num" name="btn8" value="8" onclick="displaynum(btn8.value)">
-                <input type="button" class="num" name="btn9" value="9" onclick="displaynum(btn9.value)">
-                <input type="button" class="num operador" name="dividir" value="/" onclick="displaynum(dividir.value)"><br>
-                <input type="button" class="num" name="btn4" value="4" onclick="displaynum(btn4.value)">
-                <input type="button" class="num" name="btn5" value="5" onclick="displaynum(btn5.value)">
-                <input type="button" class="num" name="btn6" value="6" onclick="displaynum(btn6.value)">
-                <input type="button" class="num operador" name="vezes" value="*" onclick="displaynum(vezes.value)"><br>
-                <input type="button" class="num" name="btn1" value="1" onclick="displaynum(btn1.value)">
-                <input type="button" class="num" name="btn2" value="2" onclick="displaynum(btn2.value)">
-                <input type="button" class="num" name="btn3" value="3" onclick="displaynum(btn3.value)">
-                <input type="button" class="num operador" name="menos" value="-" onclick="displaynum(menos.value)"><br>
-                <input type="button" class="num operador" name="ponto" value="." onclick="displaynum(ponto.value)">
-                <input type="button" class="num" name="btn0" value="0" onclick="displaynum(btn0.value)">
-                <input type="button" class="num equalizer" name="igual" value="=" onclick="display.value=eval(display.value)">
-                <input type="button" class="num operador" name="mais" value="+" onclick="displaynum(mais.value)">
+                    <input type="text" class="text" name="display" id="display"><br>
+                    <input type="button" class="limpar" name="clear" value="C" onclick="location.reload()">
+                    <input type="button" class="limpar" name="back" value="<" onclick="apagarUltimoNumero()">
+                    <input type="button" class="num operador" name="sqrt" value="√" onclick="calculateSqrt()">
+                    <input type="button" class="num operador" name="dividir" value="/" onclick="displaynum(dividir.value)"><br>
+                    <input type="button" class="num" name="btn7" value="7" onclick="displaynum(btn7.value)">
+                    <input type="button" class="num" name="btn8" value="8" onclick="displaynum(btn8.value)">
+                    <input type="button" class="num" name="btn9" value="9" onclick="displaynum(btn9.value)">
+                    <input type="button" class="num operador" name="vezes" value="*" onclick="displaynum(vezes.value)"><br>
+                    <input type="button" class="num" name="btn4" value="4" onclick="displaynum(btn4.value)">
+                    <input type="button" class="num" name="btn5" value="5" onclick="displaynum(btn5.value)">
+                    <input type="button" class="num" name="btn6" value="6" onclick="displaynum(btn6.value)">
+                    <input type="button" class="num operador" name="menos" value="-" onclick="displaynum(menos.value)"><br>
+                    <input type="button" class="num" name="btn1" value="1" onclick="displaynum(btn1.value)">
+                    <input type="button" class="num" name="btn2" value="2" onclick="displaynum(btn2.value)">
+                    <input type="button" class="num" name="btn3" value="3" onclick="displaynum(btn3.value)">
+                    <input type="button" class="num operador" name="mais" value="+" onclick="displaynum(mais.value)"><br>
+                    <input type="button" class="num operador" name="ponto" value="." onclick="displaynum(ponto.value)">
+                    <input type="button" class="num" name="btn0" value="0" onclick="displaynum(btn0.value)">
+                    <input type="button" class="num operador" name="negative" value="+/-" onclick="toggleSign()">
+                    <input type="button" class="num equalizer" name="igual" value="=" onclick="display.value=eval(display.value)">
         
             </form>
         </div>
