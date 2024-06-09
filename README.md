@@ -13,8 +13,10 @@ Este é um projeto de uma calculadora online simples, desenvolvido em HTML, CSS 
 ## Funcionalidades
 
 - **Interface de Usuário:** Uma interface limpa e intuitiva para facilitar a entrada de números e operações.
-- **Operações Básicas:** Suporte para operações de adição, subtração, multiplicação e divisão.
+- **Operações Básicas:** Suporte para operações de adição, subtração, multiplicação, divisão e raiz quadrada.
+- **Operação com negativos:** indicação e calculo de numeros negativos:
 - **Atualização Dinâmica:** Atualização dinâmica do display conforme os números e operadores são inseridos.
+- **Função backspace:** Apagar o ultio numero diogitado.
 - **Botão Limpar:** Permite limpar o display e reiniciar a calculadora.
 - **Cálculo de Expressões:** Avaliação de expressões matemáticas inseridas pelo usuário.
 
