@@ -30,11 +30,11 @@ Este é um projeto de uma calculadora online simples, desenvolvido em HTML, CSS 
 
 ## Estrutura do Código
 
-## HTLM
+## HTLM 5
 
 - ** Tag Semanticas, Classes, Containers, Links, Imagens, Texto.
 
-## CSS 
+## CSS 3
 
 - ** Modelagem de componentes, Alinhamento, Cores, Tamanhos.
 
